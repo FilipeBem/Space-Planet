@@ -118,7 +118,8 @@ while rodando:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             rodando = False
-             
+    if pontos == -1:
+           rodando = False        
             
     screen.blit(cenario, (0,0))
 
@@ -182,11 +183,12 @@ while rodando:
             atirar = True
             vel_x_missel = 2
         
-        if pontos == -1:
-           rodando = False
+        
        
         #pygame.draw.rect(screen, (255,0,0), player_rect, 4)
         #pygame.draw.rect(screen, (255,0,0), alien_rect, 4)
+        #pygame.draw.rect(screen, (255,0,0), alien2_rect, 4)
+        #pygame.draw.rect(screen, (255,0,0), alien3_rect, 4)
         #pygame.draw.rect(screen, (255,0,0), missel_rect, 4)
  
         score = font.render(f' Pontos: {int(pontos)} ', True, (0,0,0))
