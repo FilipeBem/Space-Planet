@@ -191,7 +191,7 @@ while rodando:
         #pygame.draw.rect(screen, (255,0,0), alien3_rect, 4)
         #pygame.draw.rect(screen, (255,0,0), missel_rect, 4)
  
-        score = font.render(f' Pontos: {int(pontos)} ', True, (0,0,0))
+        score = font.render(f'Pontos: {int(pontos)} ', True, (255,255,255))
         screen.blit(score, (10,50))
 
         screen.blit(alien,(pos_alien_x, pos_alien_y))
